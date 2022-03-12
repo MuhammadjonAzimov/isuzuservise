@@ -36,10 +36,10 @@ const Header = () => {
                 </div>
             </div>
             <div className="bottom-container">
-                {/* <div className="logo">
+                <div className="logo">
                     <span>ISUZU</span> SERVICE CENTER
                 </div>
-                <div className="navbar">
+                {/* <div className="navbar">
                     <p>Home</p>
                     <p>About</p>
                     <p>Service</p>
@@ -169,6 +169,10 @@ const Wrapper = styled.div`
 
             span {
                 color: red;
+            }
+
+            @media  (max-width: 700px) {
+                font-size: 20px;
             }
         }
 
