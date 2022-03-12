@@ -29,12 +29,14 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="telnumber-container">
-                    <a className='phonenumber' href="telnumber">+998(94) 935 88 79</a>
-                    <a className='phonenumber' href="telnumber">+998(94) 935 88 79</a>
+                    <div>
+                        <a className='phonenumber' href="telnumber">+998(94) 935 88 79</a>
+                        <a className='phonenumber' href="telnumber">+998(94) 935 88 79</a>
+                    </div>
                 </div>
             </div>
             <div className="bottom-container">
-                <div className="logo">
+                {/* <div className="logo">
                     <span>ISUZU</span> SERVICE CENTER
                 </div>
                 <div className="navbar">
@@ -42,7 +44,7 @@ const Header = () => {
                     <p>About</p>
                     <p>Service</p>
                     <p>Contact</p>
-                </div>
+                </div> */}
             </div>
         </Wrapper>
     );
@@ -58,21 +60,38 @@ const Wrapper = styled.div`
     background-color: white;
     filter: drop-shadow(0px 3px 30px rgba(0, 0, 0, 0.03));
 
+    
+    @media  (max-width: 700px) {
+        padding: 10px 5%;
+    }
+
     .top-container {
         width: 100%;
         height: 50%;
         display: flex;
         justify-content: space-between;
-
         border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+        
+        @media  (max-width: 700px) {
+            display: block;
+            height: 60%;
+        }
 
         .info-container {
             display: flex;
+
+            @media  (max-width: 700px) {
+                margin-top: 10px;
+            }
 
             .adress-container {
                 display: flex;
                 margin: auto;
                 padding: 0 30px 0 10px;
+
+                @media  (max-width: 700px) {
+                    padding: 0 10px;
+                }
 
                 .location-icon {
                     margin: 0 10px;
@@ -82,8 +101,8 @@ const Wrapper = styled.div`
                     color: #333333;
                     font-size: 16px;
 
-                    @media (max-width: 800px){
-                        font-size: 12px;
+                    @media (max-width: 700px){
+                        font-size: 10px;
                     }
                 }
             }
@@ -103,8 +122,8 @@ const Wrapper = styled.div`
                     color: #333333;
                     font-size: 16px;
 
-                    @media (max-width: 800px){
-                        font-size: 12px;
+                    @media (max-width: 700px){
+                        font-size: 10px;
                     }
                 }
                 
@@ -114,14 +133,20 @@ const Wrapper = styled.div`
         .telnumber-container {
             margin: auto 0;
 
+            @media  (max-width: 700px) {
+                display: flex;
+                justify-content: center;
+                margin-top: 15px;
+            }
+
             .phonenumber {
                 display: block;
                 text-decoration: none;
                 color: #333333;
                 font-size: 16px;
 
-                @media (max-width: 800px){
-                    font-size: 12px;
+                @media (max-width: 700px){
+                    font-size: 10px;
                 }
             }
         }
@@ -133,6 +158,10 @@ const Wrapper = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media  (max-width: 700px) {
+            height: 40%;
+        }
 
         .logo {
             color: #000000;
