@@ -29,7 +29,7 @@ const Ul = styled.ul`
     right: -5.5%;
     height: 300px;
     width: 200px;
-    padding-top: 15px;
+    padding-top: 18px;
 
     .navigate {
         display: flex;
