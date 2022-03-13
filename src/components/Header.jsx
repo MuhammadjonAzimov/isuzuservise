@@ -4,6 +4,7 @@ import location from '../images/location.svg'
 import clock from '../images/clock.svg'
 
 const Header = () => {
+
     return (
         <Wrapper>
             <div className="top-container">
@@ -39,12 +40,15 @@ const Header = () => {
                 <div className="logo">
                     <span>ISUZU</span> SERVICE CENTER
                 </div>
-                {/* <div className="navbar">
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Service</p>
-                    <p>Contact</p>
-                </div> */}
+                <div className="navbar">
+                    <img className='menu-icon' src="https://img.icons8.com/ios-glyphs/60/000000/menu--v1.png" alt='menu-icon' />
+                    <ul>
+                        <li><p>Home</p></li>
+                        <li><p>About</p></li>
+                        <li><p>Service</p></li>
+                        <li><p>Contact</p></li>
+                    </ul>
+                </div>
             </div>
         </Wrapper>
     );
@@ -158,6 +162,7 @@ const Wrapper = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
 
         @media  (max-width: 700px) {
             height: 40%;
@@ -177,10 +182,50 @@ const Wrapper = styled.div`
         }
 
         .navbar {
-            display: flex;
-            gap: 20px;
-            font-size: 20px;
-            color: #000000;
+            position: relative;
+            
+            .menu-icon {
+                display: none;
+            }
+
+            @media  (max-width: 700px) {
+                position: absolute;
+                top: 0;
+                right: -5%;
+                width: 300px;
+                height: 350px;
+                background: darkcyan;
+                display: flex;
+                justify-content: center;
+
+                .menu-icon {
+                    display: block;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+            }
+            
+            ul {
+                display: flex;
+                gap: 20px;
+
+                @media (max-width: 700px) {
+                    display: block;
+                    gap: 0;
+                }
+
+                li {
+                    font-size: 20px;
+                    color: #000000;
+                    list-style: none;
+                    cursor: pointer;
+
+                    @media  (max-width: 700px) {
+                        margin: 45px 0;
+                    }
+                }
+            }
         }
     }
 `;
