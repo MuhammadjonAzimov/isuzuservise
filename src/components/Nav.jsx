@@ -29,7 +29,7 @@ const Ul = styled.ul`
     right: -5.5%;
     height: 300px;
     width: 200px;
-    padding-top: 18px;
+    padding-top: 15px;
 
     .navigate {
         display: flex;
@@ -42,7 +42,7 @@ const Ul = styled.ul`
     
     li {
       color: whitesmoke;
-      margin-top: 30px;
+      margin-top: 35px;
       font-size: 20px;
     }
   }
