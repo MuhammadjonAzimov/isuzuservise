@@ -27,9 +27,9 @@ const Ul = styled.ul`
     display: ${({ open }) => open ? 'block' : 'none'};
     top: 0;
     right: -5.5%;
-    height: 350px;
-    width: 300px;
-    padding-top: 25px;
+    height: 300px;
+    width: 200px;
+    padding-top: 15px;
 
     .navigate {
         display: flex;
@@ -43,7 +43,7 @@ const Ul = styled.ul`
     li {
       color: whitesmoke;
       margin-top: 30px;
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 `;
