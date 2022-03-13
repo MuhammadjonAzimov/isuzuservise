@@ -30,7 +30,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="telnumber-container">
-                    <div>
+                    <div className='numbers'>
                         <a className='phonenumber' href="telnumber">+998(94) 935 88 79</a>
                         <a className='phonenumber' href="telnumber">+998(94) 935 88 79</a>
                     </div>
@@ -72,7 +72,7 @@ const Wrapper = styled.div`
         
         @media  (max-width: 700px) {
             display: block;
-            height: 60%;
+            height: 50%;
         }
 
         .info-container {
@@ -137,6 +137,14 @@ const Wrapper = styled.div`
                 margin-top: 15px;
             }
 
+            .numbers {
+                
+                @media  (max-width: 700px) {
+                    display: flex;
+                    gap: 15px;
+                }
+            }
+
             .phonenumber {
                 display: block;
                 text-decoration: none;
@@ -159,7 +167,7 @@ const Wrapper = styled.div`
         position: relative;
 
         @media  (max-width: 700px) {
-            height: 40%;
+            height: 50%;
         }
 
         .logo {
