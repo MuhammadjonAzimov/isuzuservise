@@ -165,12 +165,14 @@ const Wrapper = styled.div`
         justify-content: space-between;
         align-items: center;
         position: relative;
+        user-select: none;
 
         @media  (max-width: 700px) {
             height: 50%;
         }
 
         .logo {
+            font-weight: 600;
             color: #000000;
             font-size: 30px;
 

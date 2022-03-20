@@ -1,6 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const RightNav = ({ open }) => {
+  return (
+    <Ul open={open}>
+      <div className='navigate' >
+        <div className='nav'>
+          <li>Home</li>
+          <li>About</li>
+          <li>Service</li>
+          <li>Contact</li>
+        </div>
+      </div>
+    </Ul>
+  )
+}
+
+export default RightNav
+
 const Ul = styled.ul`
 
   .nav {
@@ -14,9 +31,10 @@ const Ul = styled.ul`
   li {
     color: black;
     font-weight: 600;
+    cursor: pointer;
 
     :hover {
-        color: #333333;
+        color: #6b6b6b;
     }
   }
   
@@ -47,20 +65,3 @@ const Ul = styled.ul`
     }
   }
 `;
-
-const RightNav = ({ open }) => {
-    return (
-        <Ul open={open}>
-            <div className='navigate' >
-                <div className='nav'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Service</li>
-                    <li>Contact</li>
-                </div>
-            </div>
-        </Ul>
-    )
-}
-
-export default RightNav

@@ -1,9 +1,11 @@
-import Section1 from "./containers/Section1";
+import Page1 from "./containers/Page1";
+import Header from './components/Header';
 
 function App() {
   return (
     <div>
-      <Section1 />
+      <Header />
+      <Page1 />
     </div>
   );
 }
