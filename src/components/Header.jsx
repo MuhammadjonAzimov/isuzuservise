@@ -15,8 +15,8 @@ const Header = () => {
                         </div>
 
                         <div className="location-text">
-                            <p>Наш адрес:</p>
-                            <p>Г.Ташкент,ул. Колцевая 69</p>
+                            <p>Bizning manzil:</p>
+                            <p>Toshkent.sh Halqa yo'li 123</p>
                         </div>
                     </div>
                     <div className="workingtime-container">
@@ -24,8 +24,8 @@ const Header = () => {
                             <img src={clock} alt="" />
                         </div>
                         <div className="workingtime-text">
-                            <p>График работы:</p>
-                            <p>С 9:00 до 19:00</p>
+                            <p>Ish vaqti:</p>
+                            <p>9:00 dan 19:00 gacha</p>
                         </div>
                     </div>
                 </div>
