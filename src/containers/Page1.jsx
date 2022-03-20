@@ -10,7 +10,7 @@ const Section1 = () => {
                 <div className="text-box">
                     <h1>Qulay yuk mashinalar <br /> xizmati</h1>
                     <p> Sifatli ehtiyot qismlar va malakali hizmat korsatish tez <br /> arzon qulay narxlarda istalgan tolov uslublari</p>
-                    <button>Qo'ng'iroq qilish</button>
+                    <button href="tel:949358879" >Qo'ng'iroq qilish</button>
                 </div>
             </div>
             <div className="right-container">
