@@ -10,7 +10,9 @@ const Section1 = () => {
                 <div className="text-box">
                     <h1>Qulay yuk mashinalar <br /> xizmati</h1>
                     <p> Sifatli ehtiyot qismlar va malakali hizmat korsatish tez <br /> arzon qulay narxlarda istalgan tolov uslublari</p>
-                    <button href="tel:949358879" >Qo'ng'iroq qilish</button>
+                    <div className='a-container'>
+                        <a href="tel:949358879">Qo'ng'iroq qilish</a>
+                    </div>
                 </div>
             </div>
             <div className="right-container">
@@ -67,33 +69,36 @@ const Wrapper = styled.div`
                 line-height: 22px;
                 color: rgba(51, 51, 51, 0.8);
                 margin-top: 10px;
-                margin-bottom: 15px;
 
                 @media  (max-width: 700px) {
                     font-size: 12px;
                     margin-top: 5px;
-                    margin-bottom: 8px;
                     line-height: 22px;
                 }
             }
 
-            button {
-                width: 196px;
-                height: 52px;
-                border: none;
-                background: #4762FF;
-                border-radius: 8px;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 30px;
-                color: white;
-                cursor: pointer;
+            .a-container {
+                margin-top: 25px;
 
                 @media  (max-width: 700px) {
-                    width: 166px;
-                    height: 42px;
-                    font-size: 14px;
+                    margin-top: 15px;
+                }
+
+                    a {
+                    padding: 15px 25px;
+                    background: #4762FF;
+                    border-radius: 8px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    text-decoration: none;
+                    line-height: 30px;
+                    color: white;
+                    cursor: pointer;
+
+                    @media  (max-width: 700px) {
+                        font-size: 14px;
+                    }
                 }
             }
         }
