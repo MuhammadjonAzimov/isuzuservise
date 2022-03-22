@@ -5,7 +5,7 @@ import trucs from '../images/trucs.jpg'
 
 const Page1 = () => {
     return (
-        <Wrapper>
+        <Wrapper id='home'>
             <div className="left-container">
                 <div className="text-box">
                     <h1>Qulay yuk mashinalar <br /> xizmati</h1>

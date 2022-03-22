@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
-const Page2 = () => {
+const Page4 = () => {
     return (
-        <Wrapper id='about'>
+        <Wrapper id='contact'>
 
         </Wrapper>
     );
 }
 
-export default Page2;
+export default Page4;
 
 const Wrapper = styled.div`
     width: 100%;
