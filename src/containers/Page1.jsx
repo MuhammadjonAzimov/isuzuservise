@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import trucs from '../images/trucs.jpg'
 
 
-const Section1 = () => {
+const Page1 = () => {
     return (
         <Wrapper>
             <div className="left-container">
@@ -22,13 +22,14 @@ const Section1 = () => {
     );
 }
 
-export default Section1;
+export default Page1;
 
 const Wrapper = styled.div`
     width: 100%;
     height: calc(100vh - 161px);
     display: flex;
     padding: 10px 10%;
+    background-color: white;
 
     @media  (max-width: 700px) {
         display: block;

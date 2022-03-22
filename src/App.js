@@ -1,4 +1,5 @@
 import Page1 from "./containers/Page1";
+import Page2 from "./containers/Page2";
 import Header from './components/Header';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div>
       <Header />
       <Page1 />
+      <Page2 />
     </div>
   );
 }
