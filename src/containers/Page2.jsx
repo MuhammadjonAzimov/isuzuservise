@@ -7,7 +7,7 @@ const Page2 = () => {
             <div className="left-container">
                 <div className="text-container">
                     <h3>Biz harhil turdagi yuk mashinalari uchun hizmat korsatamiz</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, excepturi corporis ipsa culpa quis error ea atque aspernatur et quod aperiam ab voluptatum numquam dolorem? Quibusdam mollitia consequatur blanditiis tempora!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, excepturi corporis ipsa culpa quis error ea atque aspernatur et quod aperiam ab voluptatum numquam!</p>
                 </div>
             </div>
             <div className="right-container"></div>
@@ -74,7 +74,7 @@ const Wrapper = styled.div`
     }
 
     .right-container {
-        width: 60%;
+        width: 50%;
         height: 100%;
         background-image: url(${service});
         background-position: center;
@@ -82,7 +82,7 @@ const Wrapper = styled.div`
 
         @media  (max-width: 700px) {
             width: 100%;
-            height: 50%;
+            height: 60%;
         }
     }
 `;
